@@ -3,6 +3,7 @@
 # log files & profiled files
 .log
 output/
+graph/
 
 # a test code.
 dum_code.py
