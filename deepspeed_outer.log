@@ -1,0 +1,1336 @@
+[2025-06-12 06:51:53,575] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-12 06:51:54,703] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-06-12 06:51:55,399] [WARNING] [runner.py:220:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+[2025-06-12 06:51:55,399] [INFO] [runner.py:610:main] cmd = /usr/local/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMF19 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None /home/deepspeed/test_single.py
+[2025-06-12 06:51:56,123] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-12 06:51:57,251] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NV_LIBNCCL_DEV_PACKAGE=libnccl-dev=2.19.3-1+cuda12.2
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NV_LIBNCCL_DEV_PACKAGE_VERSION=2.19.3-1
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NCCL_VERSION=2.19.3-1
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NCCL_SOCKET_IFNAME=lo
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NV_LIBNCCL_DEV_PACKAGE_NAME=libnccl-dev
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NV_LIBNCCL_PACKAGE=libnccl2=2.19.3-1+cuda12.2
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NCCL_IB_DISABLE=1
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NV_LIBNCCL_PACKAGE_NAME=libnccl2
+[2025-06-12 06:51:57,943] [INFO] [launch.py:139:main] 0 NV_LIBNCCL_PACKAGE_VERSION=2.19.3-1
+[2025-06-12 06:51:57,943] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [0]}
+[2025-06-12 06:51:57,943] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=1, node_rank=0
+[2025-06-12 06:51:57,943] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0]})
+[2025-06-12 06:51:57,943] [INFO] [launch.py:164:main] dist_world_size=1
+[2025-06-12 06:51:57,943] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=0
+[2025-06-12 06:51:57,943] [INFO] [launch.py:256:main] process 1373 spawned with command: ['/usr/local/bin/python', '-u', '/home/deepspeed/test_single.py', '--local_rank=0']
+[2025-06-12 06:51:58,681] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-12 06:51:59,774] [INFO] [logging.py:107:log_dist] [Rank -1] [TorchCheckpointEngine] Initialized with serialization = False
+Map:   0%|          | 0/36718 [00:00<?, ? examples/s]Map:   3%|▎         | 1000/36718 [00:00<00:04, 8054.89 examples/s]Map:   5%|▌         | 2000/36718 [00:00<00:04, 8328.99 examples/s]Map:   8%|▊         | 3000/36718 [00:00<00:03, 8680.03 examples/s]Map:  11%|█         | 4000/36718 [00:00<00:03, 8544.60 examples/s]Map:  14%|█▎        | 5000/36718 [00:00<00:03, 8412.91 examples/s]Map:  16%|█▋        | 6000/36718 [00:00<00:03, 8463.68 examples/s]Map:  19%|█▉        | 7000/36718 [00:00<00:03, 8389.59 examples/s]Map:  22%|██▏       | 8000/36718 [00:00<00:03, 8416.99 examples/s]Map:  25%|██▍       | 9000/36718 [00:01<00:03, 8389.42 examples/s]Map:  27%|██▋       | 10000/36718 [00:01<00:03, 8407.18 examples/s]Map:  30%|██▉       | 11000/36718 [00:01<00:03, 8491.37 examples/s]Map:  33%|███▎      | 12000/36718 [00:01<00:02, 8546.01 examples/s]Map:  35%|███▌      | 13000/36718 [00:01<00:02, 8571.69 examples/s]Map:  38%|███▊      | 14000/36718 [00:01<00:02, 8604.26 examples/s]Map:  41%|████      | 15000/36718 [00:01<00:02, 8577.00 examples/s]Map:  44%|████▎     | 16000/36718 [00:01<00:02, 8592.71 examples/s]Map:  46%|████▋     | 17000/36718 [00:02<00:02, 8523.28 examples/s]Map:  49%|████▉     | 18000/36718 [00:02<00:02, 8103.04 examples/s]Map:  52%|█████▏    | 19000/36718 [00:02<00:02, 8193.06 examples/s]Map:  54%|█████▍    | 20000/36718 [00:02<00:02, 8273.38 examples/s]Map:  57%|█████▋    | 21000/36718 [00:02<00:01, 8253.39 examples/s]Map:  60%|█████▉    | 22000/36718 [00:02<00:01, 8165.33 examples/s]Map:  63%|██████▎   | 23000/36718 [00:02<00:02, 6832.66 examples/s]Map:  65%|██████▌   | 24000/36718 [00:02<00:01, 7370.73 examples/s]Map:  68%|██████▊   | 25000/36718 [00:03<00:01, 7724.78 examples/s]Map:  71%|███████   | 26000/36718 [00:03<00:01, 7983.43 examples/s]Map:  74%|███████▎  | 27000/36718 [00:03<00:01, 8128.67 examples/s]Map:  76%|███████▋  | 28000/36718 [00:03<00:01, 8152.96 examples/s]Map:  79%|███████▉  | 29000/36718 [00:03<00:00, 8284.57 examples/s]Map:  82%|████████▏ | 30000/36718 [00:03<00:00, 8368.35 examples/s]Map:  84%|████████▍ | 31000/36718 [00:03<00:00, 8317.01 examples/s]Map:  87%|████████▋ | 32000/36718 [00:03<00:00, 8325.46 examples/s]Map:  90%|████████▉ | 33000/36718 [00:04<00:00, 8196.56 examples/s]Map:  93%|█████████▎| 34000/36718 [00:04<00:00, 8271.04 examples/s]Map:  95%|█████████▌| 35000/36718 [00:04<00:00, 8378.12 examples/s]Map:  98%|█████████▊| 36000/36718 [00:04<00:00, 8397.21 examples/s]Map: 100%|██████████| 36718/36718 [00:04<00:00, 8194.79 examples/s]
+Map:   0%|          | 0/36718 [00:00<?, ? examples/s]Map:   2%|▏         | 904/36718 [00:00<00:03, 8980.85 examples/s]Map:   5%|▌         | 2000/36718 [00:00<00:04, 7626.19 examples/s]Map:   8%|▊         | 2926/36718 [00:00<00:04, 8254.78 examples/s]Map:  11%|█         | 4000/36718 [00:00<00:04, 7757.36 examples/s]Map:  13%|█▎        | 4925/36718 [00:00<00:03, 8203.94 examples/s]Map:  16%|█▋        | 6001/36718 [00:00<00:03, 7792.49 examples/s]Map:  19%|█▉        | 6927/36718 [00:00<00:03, 8190.53 examples/s]Map:  22%|██▏       | 8000/36718 [00:01<00:03, 7802.40 examples/s]Map:  24%|██▍       | 8920/36718 [00:01<00:03, 8162.47 examples/s]Map:  27%|██▋       | 10000/36718 [00:01<00:03, 7816.23 examples/s]Map:  30%|██▉       | 10929/36718 [00:01<00:03, 8187.97 examples/s]Map:  33%|███▎      | 12000/36718 [00:01<00:03, 6565.92 examples/s]Map:  35%|███▌      | 12919/36718 [00:01<00:03, 7140.05 examples/s]Map:  38%|███▊      | 14000/36718 [00:01<00:03, 7124.91 examples/s]Map:  41%|████      | 14913/36718 [00:01<00:02, 7588.15 examples/s]Map:  44%|████▎     | 16000/36718 [00:02<00:02, 7432.18 examples/s]Map:  46%|████▌     | 16914/36718 [00:02<00:02, 7840.75 examples/s]Map:  49%|████▉     | 18000/36718 [00:02<00:02, 7600.98 examples/s]Map:  52%|█████▏    | 18913/36718 [00:02<00:02, 7971.50 examples/s]Map:  54%|█████▍    | 20000/36718 [00:02<00:02, 7672.55 examples/s]Map:  57%|█████▋    | 20908/36718 [00:02<00:01, 8015.01 examples/s]Map:  60%|█████▉    | 22000/36718 [00:02<00:01, 7699.88 examples/s]Map:  62%|██████▏   | 22917/36718 [00:02<00:01, 8058.08 examples/s]Map:  65%|██████▌   | 24000/36718 [00:03<00:01, 7734.24 examples/s]Map:  68%|██████▊   | 24920/36718 [00:03<00:01, 8092.82 examples/s]Map:  71%|███████   | 26000/36718 [00:03<00:01, 7717.18 examples/s]Map:  73%|███████▎  | 26911/36718 [00:03<00:01, 8057.25 examples/s]Map:  76%|███████▋  | 28000/36718 [00:03<00:01, 7731.72 examples/s]Map:  79%|███████▉  | 28919/36718 [00:03<00:00, 8086.80 examples/s]Map:  82%|████████▏ | 30000/36718 [00:03<00:00, 7754.04 examples/s]Map:  84%|████████▍ | 30913/36718 [00:03<00:00, 8090.62 examples/s]Map:  87%|████████▋ | 32000/36718 [00:04<00:00, 7731.64 examples/s]Map:  89%|████████▉ | 32843/36718 [00:04<00:00, 6621.73 examples/s]Map:  92%|█████████▏| 33602/36718 [00:04<00:00, 6840.42 examples/s]Map:  94%|█████████▍| 34462/36718 [00:04<00:00, 7088.37 examples/s]Map:  96%|█████████▌| 35226/36718 [00:04<00:00, 7227.24 examples/s]Map:  98%|█████████▊| 36000/36718 [00:04<00:00, 7345.59 examples/s]Map: 100%|██████████| 36718/36718 [00:04<00:00, 7552.05 examples/s]
+Checkpointing is not configured.
+[2025-06-12 06:52:20,298] [INFO] [logging.py:107:log_dist] [Rank -1] DeepSpeed info: version=0.17.2+10b10661, git-hash=10b10661, git-branch=master
+[2025-06-12 06:52:20,298] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-06-12 06:52:20,298] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-06-12 06:52:20,308] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 1
+[2025-06-12 06:52:20,403] [INFO] [utils.py:781:see_memory_usage] DeepSpeed Engine: After args sanity test
+[2025-06-12 06:52:20,403] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2025-06-12 06:52:20,403] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 13.57 GB, percent = 21.7%
+[2025-06-12 06:52:20,480] [INFO] [utils.py:781:see_memory_usage] DeepSpeed Engine: Before configure distributed model
+[2025-06-12 06:52:20,480] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2025-06-12 06:52:20,480] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 13.57 GB, percent = 21.7%
+[2025-06-12 06:52:20,898] [INFO] [engine.py:1325:_configure_distributed_model] ********** distributed groups summary **********
+	 self.dp_world_size=1
+	 self.mp_world_size=1
+	 self.seq_dp_world_size=1
+	 self.sequence_parallel_size=1
+***********************************************
+[2025-06-12 06:52:20,986] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+Installed CUDA version 12.2 does not match the version torch was compiled with 12.4 but since the APIs are compatible, accepting this combination
+Using /root/.cache/torch_extensions/py311_cu124 as PyTorch extensions root...
+Creating extension directory /root/.cache/torch_extensions/py311_cu124/cpu_adam...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /root/.cache/torch_extensions/py311_cu124/cpu_adam/build.ninja...
+/usr/local/lib/python3.11/dist-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/3] c++ -MMD -MF cpu_adam.o.d -DTORCH_EXTENSION_NAME=cpu_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/usr/local/lib/python3.11/dist-packages/deepspeed/ops/csrc/includes -isystem /usr/local/lib/python3.11/dist-packages/torch/include -isystem /usr/local/lib/python3.11/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/lib/python3.11/dist-packages/torch/include/TH -isystem /usr/local/lib/python3.11/dist-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /usr/include/python3.11 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++17 -O3 -std=c++17 -g -Wno-reorder -L/usr/local/cuda/lib64 -lcudart -lcublas -g -march=native -fopenmp -D__AVX256__ -D__ENABLE_CUDA__ -DBF16_AVAILABLE -c /usr/local/lib/python3.11/dist-packages/deepspeed/ops/csrc/adam/cpu_adam.cpp -o cpu_adam.o 
+[2/3] c++ -MMD -MF cpu_adam_impl.o.d -DTORCH_EXTENSION_NAME=cpu_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/usr/local/lib/python3.11/dist-packages/deepspeed/ops/csrc/includes -isystem /usr/local/lib/python3.11/dist-packages/torch/include -isystem /usr/local/lib/python3.11/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/lib/python3.11/dist-packages/torch/include/TH -isystem /usr/local/lib/python3.11/dist-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /usr/include/python3.11 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++17 -O3 -std=c++17 -g -Wno-reorder -L/usr/local/cuda/lib64 -lcudart -lcublas -g -march=native -fopenmp -D__AVX256__ -D__ENABLE_CUDA__ -DBF16_AVAILABLE -c /usr/local/lib/python3.11/dist-packages/deepspeed/ops/csrc/adam/cpu_adam_impl.cpp -o cpu_adam_impl.o 
+[3/3] c++ cpu_adam.o cpu_adam_impl.o -shared -lcurand -L/usr/local/cuda/lib64 -L/usr/local/lib/python3.11/dist-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda/lib64 -lcudart -o cpu_adam.so
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 16.22234845161438 seconds
+Adam Optimizer #0 is created with AVX2 arithmetic capability.
+Config: alpha=0.001000, betas=(0.800000, 0.999000), weight_decay=0.000000, adam_w=1
+[2025-06-12 06:52:38,292] [INFO] [logging.py:107:log_dist] [Rank 0] Using DeepSpeed Optimizer param name adam as basic optimizer
+[2025-06-12 06:52:38,292] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-06-12 06:52:38,294] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = DeepSpeedCPUAdam
+[2025-06-12 06:52:38,294] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=DeepSpeedCPUAdam type=<class 'deepspeed.ops.adam.cpu_adam.DeepSpeedCPUAdam'>
+[2025-06-12 06:52:38,294] [INFO] [logging.py:107:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer, MiCS is enabled False, Hierarchical params gather False
+[2025-06-12 06:52:38,294] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.float16 ZeRO stage 3 optimizer
+[2025-06-12 06:52:38,380] [INFO] [utils.py:781:see_memory_usage] Stage 3 initialize beginning
+[2025-06-12 06:52:38,381] [INFO] [utils.py:782:see_memory_usage] MA 2.3 GB         Max_MA 2.3 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:38,381] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 10.3 GB, percent = 16.5%
+[2025-06-12 06:52:38,381] [INFO] [stage3.py:170:__init__] Reduce bucket size 50000000
+[2025-06-12 06:52:38,381] [INFO] [stage3.py:171:__init__] Prefetch bucket size 10000000
+[2025-06-12 06:52:38,458] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2025-06-12 06:52:38,458] [INFO] [utils.py:782:see_memory_usage] MA 2.3 GB         Max_MA 2.3 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:38,458] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 10.29 GB, percent = 16.5%
+[2025-06-12 06:52:38,459] [INFO] [config.py:655:__init__] Config mesh_device None world_size = 1
+Parameter Offload - Persistent parameters statistics: param_count = 33, numel = 67584
+[2025-06-12 06:52:39,242] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2025-06-12 06:52:39,242] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 2.3 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:39,242] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 12.71 GB, percent = 20.3%
+[2025-06-12 06:52:39,322] [INFO] [utils.py:781:see_memory_usage] Before creating fp16 partitions
+[2025-06-12 06:52:39,322] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:39,323] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 12.71 GB, percent = 20.3%
+[2025-06-12 06:52:40,330] [INFO] [utils.py:781:see_memory_usage] After creating fp16 partitions: 2
+[2025-06-12 06:52:40,331] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:40,331] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 16.77 GB, percent = 26.8%
+[2025-06-12 06:52:40,412] [INFO] [utils.py:781:see_memory_usage] Before creating fp32 partitions
+[2025-06-12 06:52:40,412] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:40,412] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 16.76 GB, percent = 26.8%
+[2025-06-12 06:52:40,813] [INFO] [utils.py:781:see_memory_usage] After creating fp32 partitions
+[2025-06-12 06:52:40,813] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:40,813] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 21.91 GB, percent = 35.0%
+[2025-06-12 06:52:40,893] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2025-06-12 06:52:40,893] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:40,893] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 21.91 GB, percent = 35.0%
+[2025-06-12 06:52:42,529] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | init_optimizer_state: 1530.14
+[2025-06-12 06:52:42,687] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2025-06-12 06:52:42,688] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 2.3 GB         Max_CA 2 GB 
+[2025-06-12 06:52:42,688] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 26.69 GB, percent = 42.7%
+[2025-06-12 06:52:42,688] [INFO] [stage3.py:534:_setup_for_real_optimizer] optimizer state initialized
+[2025-06-12 06:52:43,907] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2025-06-12 06:52:43,908] [INFO] [utils.py:782:see_memory_usage] MA 0.09 GB         Max_MA 1.07 GB         CA 3.29 GB         Max_CA 3 GB 
+[2025-06-12 06:52:43,908] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 30.82 GB, percent = 49.3%
+[2025-06-12 06:52:43,908] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer_Stage3
+[2025-06-12 06:52:43,908] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2025-06-12 06:52:43,908] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-06-12 06:52:43,908] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:52:43,908] [INFO] [logging.py:107:log_dist] [Rank 0] [TorchCheckpointEngine] Initialized with serialization = True
+[2025-06-12 06:52:43,908] [INFO] [config.py:921:print] DeepSpeedEngine configuration:
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   amp_enabled .................. False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   amp_params ................... False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   bfloat16_config .............. enabled=False immediate_grad_update=False check_grad_overflow=False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   checkpoint_config ............ {'tag_validation': 'WARN', 'checkpoint_serialization': True, 'writer': None}
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   checkpoint_parallel_write_pipeline  False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   checkpoint_tag_validation_enabled  True
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   checkpoint_tag_validation_fail  False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x709cb3539350>
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   communication_data_type ...... None
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   curriculum_enabled_legacy .... False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   curriculum_params_legacy ..... False
+[2025-06-12 06:52:43,908] [INFO] [config.py:925:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   data_efficiency_enabled ...... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   dataloader_drop_last ......... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   disable_allgather ............ False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   dump_state ................... True
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_enabled ........... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_gas_boundary_resolution  1
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_layer_num ......... 0
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_max_iter .......... 100
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_stability ......... 1e-06
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_tol ............... 0.01
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   eigenvalue_verbose ........... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   elasticity_enabled ........... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   float16_config ............... enabled=True auto_cast=False loss_scale=0.0 initial_scale_power=16 loss_scale_window=1000 hysteresis=2 consecutive_hysteresis=False min_loss_scale=1 fp16_master_weights_and_grads=False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   global_rank .................. 0
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   grad_accum_dtype ............. None
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   gradient_accumulation_steps .. 1
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   gradient_clipping ............ 0.0
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   gradient_predivide_factor .... 1.0
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   graph_harvesting ............. False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   load_universal_checkpoint .... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   memory_breakdown ............. True
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   mics_hierarchial_params_gather  False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   mics_shard_size .............. -1
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   optimizer_legacy_fusion ...... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   optimizer_name ............... adam
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   optimizer_params ............. {'lr': 0.001, 'betas': [0.8, 0.999], 'eps': 1e-08, 'weight_decay': 3e-07}
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   pld_enabled .................. False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   pld_params ................... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   prescale_gradients ........... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   scheduler_name ............... None
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   scheduler_params ............. None
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   seq_parallel_communication_data_type  torch.float32
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   sparse_attention ............. None
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   sparse_gradients_enabled ..... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   steps_per_print .............. 1
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   timers_config ................ enabled=True synchronized=True
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   train_batch_size ............. 2
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   train_micro_batch_size_per_gpu  2
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   use_data_before_expert_parallel_  False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   use_node_local_storage ....... False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   wall_clock_breakdown ......... True
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   weight_quantization_config ... None
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   world_size ................... 1
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   zero_allow_untested_optimizer  False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=50000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=50000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=True) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='cpu', nvme_path=None, buffer_count=4, pin_memory=True, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=10000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=10000000 max_reuse_distance=10000000 gather_16bit_weights_on_model_save=False module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   zero_enabled ................. True
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   zero_force_ds_cpu_optimizer .. True
+[2025-06-12 06:52:43,909] [INFO] [config.py:925:print]   zero_optimization_stage ...... 3
+[2025-06-12 06:52:43,909] [INFO] [config.py:911:print_user_config]   json = {
+    "fp16": {
+        "enabled": true
+    }, 
+    "zero_optimization": {
+        "stage": 3, 
+        "offload_optimizer": {
+            "device": "cpu", 
+            "ratio": 1, 
+            "pin_memory": true
+        }, 
+        "offload_param": {
+            "device": "cpu", 
+            "pin_memory": true
+        }, 
+        "contiguous_gradients": true, 
+        "overlap_comm": true, 
+        "allgather_bucket_size": 5.000000e+07, 
+        "reduce_bucket_size": 5.000000e+07, 
+        "stage3_param_persistence_threshold": 1.000000e+05, 
+        "stage3_prefetch_bucket_size": 1.000000e+07, 
+        "stage3_max_live_parameters": 1.000000e+07, 
+        "stage3_max_reuse_distance": 1.000000e+07
+    }, 
+    "optimizer": {
+        "type": "Adam", 
+        "params": {
+            "lr": 0.001, 
+            "betas": [0.8, 0.999], 
+            "eps": 1e-08, 
+            "weight_decay": 3e-07
+        }
+    }, 
+    "train_batch_size": 2, 
+    "micro_batch_size_per_gpu": 2, 
+    "gradient_accumulation_steps": 1, 
+    "steps_per_print": 1, 
+    "wall_clock_breakdown": true, 
+    "memory_breakdown": true, 
+    "dump_state": true
+}
+[2025-06-12 06:52:43,909] [INFO] [logging.py:80:print_configuration] DeepSpeedEngine:
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _backward_hooks .............. OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _backward_pre_hooks .......... OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _buffers ..................... {}
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _config ...................... <deepspeed.runtime.config.DeepSpeedConfig object at 0x709cb3f216d0>
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _forward_hooks ............... OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _forward_hooks_always_called . OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _forward_hooks_with_kwargs ... OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _forward_pre_hooks ........... OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _forward_pre_hooks_with_kwargs  OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _global_grad_norm ............ None
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _is_full_backward_hook ....... None
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _is_gradient_accumulation_boundary  None
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _load_state_dict_post_hooks .. OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _load_state_dict_pre_hooks ... OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _modules ..................... {'module': LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(128256, 2048)
+    (layers): ModuleList(
+      (0-15): 16 x LlamaDecoderLayer(
+        (self_attn): LlamaAttention(
+          (q_proj): Linear(in_features=2048, out_features=2048, bias=False)
+          (k_proj): Linear(in_features=2048, out_features=512, bias=False)
+          (v_proj): Linear(in_features=2048, out_features=512, bias=False)
+          (o_proj): Linear(in_features=2048, out_features=2048, bias=False)
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): Linear(in_features=2048, out_features=8192, bias=False)
+          (up_proj): Linear(in_features=2048, out_features=8192, bias=False)
+          (down_proj): Linear(in_features=8192, out_features=2048, bias=False)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): LlamaRMSNorm((0,), eps=1e-05)
+        (post_attention_layernorm): LlamaRMSNorm((0,), eps=1e-05)
+      )
+    )
+    (norm): LlamaRMSNorm((0,), eps=1e-05)
+    (rotary_emb): LlamaRotaryEmbedding()
+  )
+  (lm_head): Linear(in_features=2048, out_features=128256, bias=False)
+)}
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _non_persistent_buffers_set .. set()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _parameters .................. {}
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _state_dict_hooks ............ OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _state_dict_pre_hooks ........ OrderedDict()
+[2025-06-12 06:52:43,909] [INFO] [logging.py:83:print_configuration]   _step_applied ................ False
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   all_to_all_group ............. None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   basic_optimizer .............. DeepSpeedCPUAdam (
+Parameter Group 0
+    amsgrad: False
+    betas: [0.8, 0.999]
+    bias_correction: True
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 3e-07
+)
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   block_eigenvalue ............. None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   checkpoint_engine ............ <deepspeed.runtime.checkpoint_engine.torch_checkpoint_engine.TorchCheckpointEngine object at 0x709c910bbe90>
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   client_lr_scheduler .......... None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   client_optimizer ............. None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   collate_fn ................... None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   compression_scheduler ........ <deepspeed.compression.scheduler.compression_scheduler object at 0x709c910b3090>
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   config ....................... /home/deepspeed/config/ds_config_single.json
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   data_parallel_group .......... <torch.distributed.distributed_c10d.ProcessGroup object at 0x709c91382c30>
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   device ....................... cuda:0
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   dist_backend ................. nccl
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   dont_change_device ........... False
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   dp_world_size ................ 1
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   eigenvalue ................... None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   enable_backward_allreduce .... True
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   engine_timers ................ <deepspeed.runtime.engine.EngineTimers object at 0x709c910baf10>
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   expert_data_parallel_group ... {}
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   expert_parallel_group ........ {}
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   gas_boundary_ctr ............. 0
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   gate_modules ................. []
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   global_rank .................. 0
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   global_samples ............... 0
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   global_steps ................. 0
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   gradient_average ............. True
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   has_moe_layers ............... False
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   inside_no_sync_ctxt .......... False
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   loaded_checkpoint_dp_world_size  None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   loaded_checkpoint_mp_world_size  None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   local_all_to_all_group ....... None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   local_rank ................... 0
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   losses ....................... None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   lr_scheduler ................. None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   mesh_device .................. None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   micro_steps .................. 0
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   module ....................... LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(128256, 2048)
+    (layers): ModuleList(
+      (0-15): 16 x LlamaDecoderLayer(
+        (self_attn): LlamaAttention(
+          (q_proj): Linear(in_features=2048, out_features=2048, bias=False)
+          (k_proj): Linear(in_features=2048, out_features=512, bias=False)
+          (v_proj): Linear(in_features=2048, out_features=512, bias=False)
+          (o_proj): Linear(in_features=2048, out_features=2048, bias=False)
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): Linear(in_features=2048, out_features=8192, bias=False)
+          (up_proj): Linear(in_features=2048, out_features=8192, bias=False)
+          (down_proj): Linear(in_features=8192, out_features=2048, bias=False)
+          (act_fn): SiLU()
+        )
+        (input_layernorm): LlamaRMSNorm((0,), eps=1e-05)
+        (post_attention_layernorm): LlamaRMSNorm((0,), eps=1e-05)
+      )
+    )
+    (norm): LlamaRMSNorm((0,), eps=1e-05)
+    (rotary_emb): LlamaRotaryEmbedding()
+  )
+  (lm_head): Linear(in_features=2048, out_features=128256, bias=False)
+)
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   module_forward_post_hook ..... <torch.utils.hooks.RemovableHandle object at 0x709c91381390>
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   module_forward_pre_hook ...... <torch.utils.hooks.RemovableHandle object at 0x709cb353bb50>
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   moe_layers ................... []
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   monitor ...................... <deepspeed.monitor.monitor.MonitorMaster object at 0x709cb238bfd0>
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   mp_world_size ................ 1
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   mpu .......................... None
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   num_experts .................. []
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   optimized_linear_base_weight_sharding  False
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   optimized_linear_lora_enabled  False
+[2025-06-12 06:52:43,910] [INFO] [logging.py:83:print_configuration]   optimizer .................... <deepspeed.runtime.zero.stage3.DeepSpeedZeroOptimizer_Stage3 object at 0x709cb2380250>
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   param_names .................. {Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.embed_tokens.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.0.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.1.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.2.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.3.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.4.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.5.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.6.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.7.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.8.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.9.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.10.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.11.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.12.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.13.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.14.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.self_attn.q_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.self_attn.k_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.self_attn.v_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.self_attn.o_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.mlp.gate_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.mlp.up_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.mlp.down_proj.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.input_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.layers.15.post_attention_layernorm.weight', Parameter containing:
+tensor([], device='cuda:0', dtype=torch.float16, requires_grad=True): 'model.norm.weight'}
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   pipeline_parallelism ......... False
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   progressive_layer_drop ....... None
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   quantizer .................... None
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   save_non_zero_checkpoint ..... True
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   save_zero_checkpoint ......... True
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   scale_wrt_gas ................ None
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   seq_data_parallel_group ...... <torch.distributed.distributed_c10d.ProcessGroup object at 0x709c91382c30>
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   seq_dp_world_size ............ 1
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   sequence_parallel_size ....... 1
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   skipped_steps ................ 0
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   sparse_tensor_module_names ... set()
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   timers ....................... <deepspeed.utils.timer.SynchronizedWallClockTimer object at 0x709c91383b90>
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   tput_timer ................... <deepspeed.utils.timer.ThroughputTimer object at 0x709cb238b8d0>
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   training ..................... True
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   training_data ................ None
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   training_dataloader .......... None
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   use_ds_comm .................. False
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   warn_unscaled_loss ........... True
+[2025-06-12 06:52:43,912] [INFO] [logging.py:83:print_configuration]   world_size ................... 1
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[2025-06-12 06:52:44,138] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:52:44,139] [INFO] [utils.py:782:see_memory_usage] MA 0.09 GB         Max_MA 0.09 GB         CA 3.29 GB         Max_CA 3 GB 
+[2025-06-12 06:52:44,139] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 30.96 GB, percent = 49.5%
+[2025-06-12 06:52:44,816] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:52:44,817] [INFO] [utils.py:782:see_memory_usage] MA 5.0 GB         Max_MA 5.49 GB         CA 5.64 GB         Max_CA 6 GB 
+[2025-06-12 06:52:44,817] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.58 GB, percent = 50.5%
+[2025-06-12 06:52:44,942] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:52:44,943] [INFO] [utils.py:782:see_memory_usage] MA 5.0 GB         Max_MA 5.0 GB         CA 5.64 GB         Max_CA 6 GB 
+[2025-06-12 06:52:44,943] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.58 GB, percent = 50.5%
+[2025-06-12 06:52:45,970] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:52:45,971] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.98 GB         CA 9.33 GB         Max_CA 9 GB 
+[2025-06-12 06:52:45,971] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.6 GB, percent = 50.5%
+[2025-06-12 06:52:46,098] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:52:46,099] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.33 GB         Max_CA 9 GB 
+[2025-06-12 06:52:46,099] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.61 GB, percent = 50.5%
+[2025-06-12 06:52:46,565] [INFO] [loss_scaler.py:191:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 65536, but hysteresis is 2. Reducing hysteresis to 1
+[2025-06-12 06:52:46,566] [INFO] [stage3.py:2028:_loco_err_buf_update] update loco-zero++ error buffer with overflow: True
+[2025-06-12 06:52:46,566] [INFO] [logging.py:107:log_dist] [Rank 0] step=1, skipped=1, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:52:46,566] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 550.03 | bwd_microstep: 1153.75 | bwd_inner_microstep: 770.49 | bwd_allreduce_microstep: 125.97 | step_microstep: 466.61
+[2025-06-12 06:52:46,566] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 550.02 | bwd: 1153.74 | bwd_inner: 770.48 | bwd_allreduce: 125.97 | step: 466.61
+[2025-06-12 06:52:46,653] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:52:46,654] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.88 GB         CA 9.33 GB         Max_CA 9 GB 
+[2025-06-12 06:52:46,654] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.2 GB, percent = 49.9%
+EMPTY.
+[2025-06-12 06:52:46,837] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:52:46,837] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.38 GB         CA 0.55 GB         Max_CA 9 GB 
+[2025-06-12 06:52:46,837] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.15 GB, percent = 49.8%
+[2025-06-12 06:52:47,111] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:52:47,111] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:47,112] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.15 GB, percent = 49.8%
+[2025-06-12 06:52:47,195] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:52:47,195] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:47,195] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.15 GB, percent = 49.8%
+[2025-06-12 06:52:48,068] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:52:48,069] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:48,069] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.15 GB, percent = 49.8%
+[2025-06-12 06:52:48,151] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:52:48,151] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:48,151] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.15 GB, percent = 49.8%
+[2025-06-12 06:52:48,610] [INFO] [loss_scaler.py:184:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 65536, reducing to 32768
+[2025-06-12 06:52:48,610] [INFO] [stage3.py:2028:_loco_err_buf_update] update loco-zero++ error buffer with overflow: True
+[2025-06-12 06:52:48,610] [INFO] [logging.py:107:log_dist] [Rank 0] step=2, skipped=2, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:52:48,610] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 202.46 | bwd_microstep: 956.33 | bwd_inner_microstep: 663.79 | bwd_allreduce_microstep: 123.51 | step_microstep: 458.48
+[2025-06-12 06:52:48,610] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 202.45 | bwd: 956.33 | bwd_inner: 663.79 | bwd_allreduce: 123.51 | step: 458.49
+[2025-06-12 06:52:48,700] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:52:48,700] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:48,700] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.83 GB, percent = 50.9%
+EMPTY.
+[2025-06-12 06:52:48,902] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:52:48,902] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.38 GB         CA 0.8 GB         Max_CA 9 GB 
+[2025-06-12 06:52:48,902] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.82 GB, percent = 50.9%
+[2025-06-12 06:52:49,170] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:52:49,170] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:49,170] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.82 GB, percent = 50.9%
+[2025-06-12 06:52:49,255] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:52:49,255] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:49,255] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.82 GB, percent = 50.9%
+[2025-06-12 06:52:50,128] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:52:50,129] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:50,129] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.79 GB, percent = 50.8%
+[2025-06-12 06:52:50,213] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:52:50,214] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:50,214] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.79 GB, percent = 50.8%
+[2025-06-12 06:52:50,685] [INFO] [loss_scaler.py:184:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 32768, reducing to 16384
+[2025-06-12 06:52:50,685] [INFO] [stage3.py:2028:_loco_err_buf_update] update loco-zero++ error buffer with overflow: True
+[2025-06-12 06:52:50,685] [INFO] [logging.py:107:log_dist] [Rank 0] step=3, skipped=3, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:52:50,686] [INFO] [timer.py:264:stop] epoch=0/micro_step=3/global_step=3, RunningAvgSamplesPerSec=1.1217187957988606, CurrSamplesPerSec=1.121718166672685, MemAllocated=0.38GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:52:50,686] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 192.12 | bwd_microstep: 957.46 | bwd_inner_microstep: 661.79 | bwd_allreduce_microstep: 123.57 | step_microstep: 471.96
+[2025-06-12 06:52:50,686] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 192.08 | bwd: 957.47 | bwd_inner: 661.82 | bwd_allreduce: 123.57 | step: 471.96
+[2025-06-12 06:52:50,773] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:52:50,774] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:50,774] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.32 GB, percent = 50.1%
+EMPTY.
+[2025-06-12 06:52:50,983] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:52:50,984] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.38 GB         CA 0.8 GB         Max_CA 9 GB 
+[2025-06-12 06:52:50,984] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.09 GB, percent = 49.7%
+[2025-06-12 06:52:51,251] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:52:51,252] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:51,252] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.1 GB, percent = 49.7%
+[2025-06-12 06:52:51,336] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:52:51,337] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:51,337] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.1 GB, percent = 49.7%
+[2025-06-12 06:52:52,209] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:52:52,209] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:52,209] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.08 GB, percent = 49.7%
+[2025-06-12 06:52:52,294] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:52:52,294] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:52,295] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.08 GB, percent = 49.7%
+[2025-06-12 06:52:52,730] [INFO] [loss_scaler.py:184:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 16384, reducing to 8192
+[2025-06-12 06:52:52,730] [INFO] [stage3.py:2028:_loco_err_buf_update] update loco-zero++ error buffer with overflow: True
+[2025-06-12 06:52:52,730] [INFO] [logging.py:107:log_dist] [Rank 0] step=4, skipped=4, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:52:52,730] [INFO] [timer.py:264:stop] epoch=0/micro_step=4/global_step=4, RunningAvgSamplesPerSec=1.133369920640132, CurrSamplesPerSec=1.14526496702488, MemAllocated=0.38GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:52:52,731] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 192.09 | bwd_microstep: 956.75 | bwd_inner_microstep: 660.84 | bwd_allreduce_microstep: 123.52 | step_microstep: 435.94
+[2025-06-12 06:52:52,731] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 192.09 | bwd: 956.75 | bwd_inner: 660.84 | bwd_allreduce: 123.52 | step: 435.95
+[2025-06-12 06:52:52,820] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:52:52,821] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:52,821] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 32.2 GB, percent = 51.5%
+EMPTY.
+[2025-06-12 06:52:53,021] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:52:53,021] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.38 GB         CA 0.8 GB         Max_CA 9 GB 
+[2025-06-12 06:52:53,022] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.97 GB, percent = 51.1%
+[2025-06-12 06:52:53,290] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:52:53,290] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:53,290] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.96 GB, percent = 51.1%
+[2025-06-12 06:52:53,373] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:52:53,374] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:53,374] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.95 GB, percent = 51.1%
+[2025-06-12 06:52:54,246] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:52:54,246] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:54,246] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.95 GB, percent = 51.1%
+[2025-06-12 06:52:54,329] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:52:54,329] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:54,329] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.94 GB, percent = 51.1%
+[2025-06-12 06:52:54,767] [INFO] [loss_scaler.py:184:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 8192, reducing to 4096
+[2025-06-12 06:52:54,767] [INFO] [stage3.py:2028:_loco_err_buf_update] update loco-zero++ error buffer with overflow: True
+[2025-06-12 06:52:54,767] [INFO] [logging.py:107:log_dist] [Rank 0] step=5, skipped=5, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:52:54,768] [INFO] [timer.py:264:stop] epoch=0/micro_step=5/global_step=5, RunningAvgSamplesPerSec=1.137404649154809, CurrSamplesPerSec=1.1455602483633198, MemAllocated=0.38GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:52:54,768] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 192.80 | bwd_microstep: 955.10 | bwd_inner_microstep: 661.67 | bwd_allreduce_microstep: 123.66 | step_microstep: 438.62
+[2025-06-12 06:52:54,768] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 192.79 | bwd: 955.10 | bwd_inner: 661.68 | bwd_allreduce: 123.66 | step: 438.62
+[2025-06-12 06:52:54,853] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:52:54,854] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:54,854] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.49 GB, percent = 50.3%
+EMPTY.
+[2025-06-12 06:52:55,050] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:52:55,050] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.38 GB         CA 0.8 GB         Max_CA 9 GB 
+[2025-06-12 06:52:55,050] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.25 GB, percent = 50.0%
+[2025-06-12 06:52:55,319] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:52:55,319] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:55,319] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.25 GB, percent = 50.0%
+[2025-06-12 06:52:55,403] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:52:55,403] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:55,403] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.25 GB, percent = 50.0%
+[2025-06-12 06:52:56,273] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:52:56,273] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:56,273] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.25 GB, percent = 50.0%
+[2025-06-12 06:52:56,355] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:52:56,355] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:56,355] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.25 GB, percent = 50.0%
+[2025-06-12 06:52:56,791] [INFO] [loss_scaler.py:184:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 4096, reducing to 2048
+[2025-06-12 06:52:56,792] [INFO] [stage3.py:2028:_loco_err_buf_update] update loco-zero++ error buffer with overflow: True
+[2025-06-12 06:52:56,792] [INFO] [logging.py:107:log_dist] [Rank 0] step=6, skipped=6, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:52:56,792] [INFO] [timer.py:264:stop] epoch=0/micro_step=6/global_step=6, RunningAvgSamplesPerSec=1.1401382976677448, CurrSamplesPerSec=1.1484179972671316, MemAllocated=0.38GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:52:56,792] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 190.91 | bwd_microstep: 952.87 | bwd_inner_microstep: 660.25 | bwd_allreduce_microstep: 123.54 | step_microstep: 436.56
+[2025-06-12 06:52:56,792] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 190.90 | bwd: 952.87 | bwd_inner: 660.25 | bwd_allreduce: 123.54 | step: 436.56
+[2025-06-12 06:52:56,877] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:52:56,878] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:56,878] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.34 GB, percent = 50.1%
+EMPTY.
+[2025-06-12 06:52:57,071] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:52:57,071] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.38 GB         CA 0.81 GB         Max_CA 9 GB 
+[2025-06-12 06:52:57,071] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.18 GB, percent = 49.9%
+[2025-06-12 06:52:57,337] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:52:57,337] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:57,337] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.18 GB, percent = 49.9%
+[2025-06-12 06:52:57,420] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:52:57,420] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:52:57,420] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.18 GB, percent = 49.9%
+[2025-06-12 06:52:58,289] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:52:58,289] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:58,289] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.18 GB, percent = 49.9%
+[2025-06-12 06:52:58,370] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:52:58,371] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:52:58,371] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 31.18 GB, percent = 49.9%
+[2025-06-12 06:53:00,284] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 1454.52
+[2025-06-12 06:53:00,284] [INFO] [logging.py:107:log_dist] [Rank 0] step=7, skipped=6, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:00,284] [INFO] [timer.py:264:stop] epoch=0/micro_step=7/global_step=7, RunningAvgSamplesPerSec=0.977586913274188, CurrSamplesPerSec=0.6225530036403102, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:00,284] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 190.42 | bwd_microstep: 950.96 | bwd_inner_microstep: 660.08 | bwd_allreduce_microstep: 123.45 | step_microstep: 1913.13
+[2025-06-12 06:53:00,284] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 190.41 | bwd: 950.96 | bwd_inner: 660.08 | bwd_allreduce: 123.45 | step: 1913.13
+[2025-06-12 06:53:00,370] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:00,371] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:00,371] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 44.65 GB, percent = 71.4%
+EMPTY.
+[2025-06-12 06:53:00,568] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:00,569] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.81 GB         Max_CA 9 GB 
+[2025-06-12 06:53:00,569] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 44.65 GB, percent = 71.4%
+[2025-06-12 06:53:00,852] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:00,853] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:00,853] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 44.75 GB, percent = 71.6%
+[2025-06-12 06:53:00,981] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:00,982] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:00,982] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 44.76 GB, percent = 71.6%
+[2025-06-12 06:53:01,853] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:01,853] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:01,853] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 44.78 GB, percent = 71.6%
+[2025-06-12 06:53:01,935] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:01,935] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:01,935] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 44.78 GB, percent = 71.6%
+[2025-06-12 06:53:03,312] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 833.76
+[2025-06-12 06:53:03,313] [INFO] [logging.py:107:log_dist] [Rank 0] step=8, skipped=6, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:03,313] [INFO] [timer.py:264:stop] epoch=0/micro_step=8/global_step=8, RunningAvgSamplesPerSec=0.9249587508184091, CurrSamplesPerSec=0.7287878089614087, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:03,314] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 186.61 | bwd_microstep: 999.14 | bwd_inner_microstep: 662.43 | bwd_allreduce_microstep: 123.50 | step_microstep: 1378.22
+[2025-06-12 06:53:03,314] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 186.61 | bwd: 999.13 | bwd_inner: 662.42 | bwd_allreduce: 123.50 | step: 1378.24
+[2025-06-12 06:53:03,442] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:03,442] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:03,443] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.41 GB, percent = 72.6%
+EMPTY.
+[2025-06-12 06:53:03,665] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:03,665] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.81 GB         Max_CA 9 GB 
+[2025-06-12 06:53:03,666] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.41 GB, percent = 72.6%
+[2025-06-12 06:53:03,976] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:03,976] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:03,976] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.41 GB, percent = 72.6%
+[2025-06-12 06:53:04,101] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:04,102] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:04,102] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.41 GB, percent = 72.6%
+[2025-06-12 06:53:05,045] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:05,045] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:05,045] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.44 GB, percent = 72.7%
+[2025-06-12 06:53:05,172] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:05,172] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:05,172] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.44 GB, percent = 72.7%
+[2025-06-12 06:53:05,583] [INFO] [loss_scaler.py:184:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 2048, reducing to 1024
+[2025-06-12 06:53:05,584] [INFO] [stage3.py:2028:_loco_err_buf_update] update loco-zero++ error buffer with overflow: True
+[2025-06-12 06:53:05,584] [INFO] [logging.py:107:log_dist] [Rank 0] step=9, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:05,584] [INFO] [timer.py:264:stop] epoch=0/micro_step=9/global_step=9, RunningAvgSamplesPerSec=0.9401180851690437, CurrSamplesPerSec=1.0426464443472008, MemAllocated=0.38GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:05,584] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 200.54 | bwd_microstep: 1067.68 | bwd_inner_microstep: 687.44 | bwd_allreduce_microstep: 125.09 | step_microstep: 411.39
+[2025-06-12 06:53:05,584] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 200.54 | bwd: 1067.68 | bwd_inner: 687.58 | bwd_allreduce: 125.08 | step: 411.38
+[2025-06-12 06:53:05,673] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:05,673] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:05,673] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.61 GB, percent = 72.9%
+EMPTY.
+[2025-06-12 06:53:05,864] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:05,864] [INFO] [utils.py:782:see_memory_usage] MA 0.38 GB         Max_MA 0.38 GB         CA 0.81 GB         Max_CA 9 GB 
+[2025-06-12 06:53:05,864] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.48 GB, percent = 72.7%
+[2025-06-12 06:53:06,130] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:06,130] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:06,130] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.48 GB, percent = 72.7%
+[2025-06-12 06:53:06,216] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:06,217] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:06,217] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.48 GB, percent = 72.7%
+[2025-06-12 06:53:07,086] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:07,087] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:07,087] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.48 GB, percent = 72.7%
+[2025-06-12 06:53:07,170] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:07,170] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:07,170] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.48 GB, percent = 72.7%
+[2025-06-12 06:53:08,400] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 813.30
+[2025-06-12 06:53:08,400] [INFO] [logging.py:107:log_dist] [Rank 0] step=10, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:08,400] [INFO] [timer.py:264:stop] epoch=0/micro_step=10/global_step=10, RunningAvgSamplesPerSec=0.9180743806056616, CurrSamplesPerSec=0.7886321708118199, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:08,400] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 190.31 | bwd_microstep: 955.75 | bwd_inner_microstep: 660.26 | bwd_allreduce_microstep: 123.49 | step_microstep: 1230.02
+[2025-06-12 06:53:08,401] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 190.31 | bwd: 955.75 | bwd_inner: 660.26 | bwd_allreduce: 123.49 | step: 1230.03
+[2025-06-12 06:53:08,493] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:08,493] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:08,493] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.75 GB, percent = 73.2%
+EMPTY.
+[2025-06-12 06:53:08,683] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:08,684] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.81 GB         Max_CA 9 GB 
+[2025-06-12 06:53:08,684] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+[2025-06-12 06:53:08,946] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:08,946] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:08,946] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+[2025-06-12 06:53:09,030] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:09,031] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:09,031] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+[2025-06-12 06:53:09,904] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:09,904] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:09,904] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.72 GB, percent = 73.1%
+[2025-06-12 06:53:09,988] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:09,988] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:09,988] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.72 GB, percent = 73.1%
+[2025-06-12 06:53:11,237] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.47
+[2025-06-12 06:53:11,237] [INFO] [logging.py:107:log_dist] [Rank 0] step=11, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:11,237] [INFO] [timer.py:264:stop] epoch=0/micro_step=11/global_step=11, RunningAvgSamplesPerSec=0.9008635119589519, CurrSamplesPerSec=0.7833772306994263, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:11,237] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 186.73 | bwd_microstep: 957.22 | bwd_inner_microstep: 661.46 | bwd_allreduce_microstep: 123.50 | step_microstep: 1249.09
+[2025-06-12 06:53:11,237] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 186.63 | bwd: 957.21 | bwd_inner: 661.47 | bwd_allreduce: 123.50 | step: 1249.09
+[2025-06-12 06:53:11,326] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:11,326] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:11,326] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.55 GB, percent = 72.8%
+EMPTY.
+[2025-06-12 06:53:11,511] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:11,511] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.81 GB         Max_CA 9 GB 
+[2025-06-12 06:53:11,511] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.38 GB, percent = 72.6%
+[2025-06-12 06:53:11,767] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:11,767] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:11,767] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.38 GB, percent = 72.6%
+[2025-06-12 06:53:11,850] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:11,851] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:11,851] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.38 GB, percent = 72.6%
+[2025-06-12 06:53:12,720] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:12,720] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:12,720] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.36 GB, percent = 72.5%
+[2025-06-12 06:53:12,802] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:12,802] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:12,802] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.36 GB, percent = 72.5%
+[2025-06-12 06:53:14,034] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.33
+[2025-06-12 06:53:14,034] [INFO] [logging.py:107:log_dist] [Rank 0] step=12, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:14,035] [INFO] [timer.py:264:stop] epoch=0/micro_step=12/global_step=12, RunningAvgSamplesPerSec=0.8887322972547874, CurrSamplesPerSec=0.7926643086878854, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:14,035] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.61 | bwd_microstep: 951.89 | bwd_inner_microstep: 659.91 | bwd_allreduce_microstep: 123.46 | step_microstep: 1232.45
+[2025-06-12 06:53:14,035] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.61 | bwd: 951.89 | bwd_inner: 659.92 | bwd_allreduce: 123.46 | step: 1232.45
+[2025-06-12 06:53:14,133] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:14,133] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:14,133] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.75 GB, percent = 73.1%
+EMPTY.
+[2025-06-12 06:53:14,329] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:14,330] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:14,330] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.56 GB, percent = 72.9%
+[2025-06-12 06:53:14,598] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:14,599] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:14,599] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.53 GB, percent = 72.8%
+[2025-06-12 06:53:14,691] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:14,692] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:14,692] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.53 GB, percent = 72.8%
+[2025-06-12 06:53:15,566] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:15,566] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:15,566] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.47 GB, percent = 72.7%
+[2025-06-12 06:53:15,654] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:15,654] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:15,654] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.47 GB, percent = 72.7%
+[2025-06-12 06:53:16,885] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 810.42
+[2025-06-12 06:53:16,885] [INFO] [logging.py:107:log_dist] [Rank 0] step=13, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:16,885] [INFO] [timer.py:264:stop] epoch=0/micro_step=13/global_step=13, RunningAvgSamplesPerSec=0.8779108993204096, CurrSamplesPerSec=0.7826173619807923, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:16,886] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.71 | bwd_microstep: 966.74 | bwd_inner_microstep: 659.77 | bwd_allreduce_microstep: 123.48 | step_microstep: 1231.43
+[2025-06-12 06:53:16,886] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.70 | bwd: 966.74 | bwd_inner: 659.77 | bwd_allreduce: 123.49 | step: 1231.43
+[2025-06-12 06:53:16,972] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:16,972] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:16,972] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.75 GB, percent = 73.1%
+EMPTY.
+[2025-06-12 06:53:17,155] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:17,156] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:17,156] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.57 GB, percent = 72.9%
+[2025-06-12 06:53:17,412] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:17,413] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:17,413] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.54 GB, percent = 72.8%
+[2025-06-12 06:53:17,496] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:17,496] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:17,497] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.54 GB, percent = 72.8%
+[2025-06-12 06:53:18,365] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:18,365] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:18,365] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.51 GB, percent = 72.8%
+[2025-06-12 06:53:18,447] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:18,447] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:18,447] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.51 GB, percent = 72.8%
+[2025-06-12 06:53:19,673] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 813.98
+[2025-06-12 06:53:19,673] [INFO] [logging.py:107:log_dist] [Rank 0] step=14, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:19,673] [INFO] [timer.py:264:stop] epoch=0/micro_step=14/global_step=14, RunningAvgSamplesPerSec=0.8703039234188057, CurrSamplesPerSec=0.7945703223925676, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:19,673] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.84 | bwd_microstep: 951.71 | bwd_inner_microstep: 659.82 | bwd_allreduce_microstep: 123.48 | step_microstep: 1225.51
+[2025-06-12 06:53:19,673] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.83 | bwd: 951.71 | bwd_inner: 659.83 | bwd_allreduce: 123.48 | step: 1225.51
+[2025-06-12 06:53:19,759] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:19,759] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:19,759] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.46 GB, percent = 72.7%
+EMPTY.
+[2025-06-12 06:53:19,945] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:19,945] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:19,945] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.29 GB, percent = 72.4%
+[2025-06-12 06:53:20,202] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:20,203] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:20,203] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.29 GB, percent = 72.4%
+[2025-06-12 06:53:20,286] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:20,286] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:20,287] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.29 GB, percent = 72.4%
+[2025-06-12 06:53:21,156] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:21,156] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:21,156] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.29 GB, percent = 72.4%
+[2025-06-12 06:53:21,239] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:21,239] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:21,239] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.29 GB, percent = 72.4%
+[2025-06-12 06:53:22,477] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 812.53
+[2025-06-12 06:53:22,478] [INFO] [logging.py:107:log_dist] [Rank 0] step=15, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:22,478] [INFO] [timer.py:264:stop] epoch=0/micro_step=15/global_step=15, RunningAvgSamplesPerSec=0.8635225318947624, CurrSamplesPerSec=0.7896837800332064, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:22,478] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.72 | bwd_microstep: 952.61 | bwd_inner_microstep: 660.17 | bwd_allreduce_microstep: 123.49 | step_microstep: 1238.77
+[2025-06-12 06:53:22,478] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.71 | bwd: 952.61 | bwd_inner: 660.18 | bwd_allreduce: 123.49 | step: 1238.78
+[2025-06-12 06:53:22,571] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:22,572] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:22,572] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.57 GB, percent = 72.9%
+EMPTY.
+[2025-06-12 06:53:22,759] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:22,760] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:22,760] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.56 GB, percent = 72.8%
+[2025-06-12 06:53:23,016] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:23,016] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:23,016] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.56 GB, percent = 72.9%
+[2025-06-12 06:53:23,100] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:23,101] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:23,101] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.56 GB, percent = 72.9%
+[2025-06-12 06:53:23,972] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:23,972] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:23,972] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.55 GB, percent = 72.8%
+[2025-06-12 06:53:24,055] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:24,055] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:24,055] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.55 GB, percent = 72.8%
+[2025-06-12 06:53:25,287] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.23
+[2025-06-12 06:53:25,287] [INFO] [logging.py:107:log_dist] [Rank 0] step=16, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:25,287] [INFO] [timer.py:264:stop] epoch=0/micro_step=16/global_step=16, RunningAvgSamplesPerSec=0.8579370799987481, CurrSamplesPerSec=0.7913911641210615, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:25,287] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.57 | bwd_microstep: 954.85 | bwd_inner_microstep: 661.35 | bwd_allreduce_microstep: 123.47 | step_microstep: 1232.21
+[2025-06-12 06:53:25,287] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.56 | bwd: 954.85 | bwd_inner: 661.35 | bwd_allreduce: 123.47 | step: 1232.21
+[2025-06-12 06:53:25,376] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:25,377] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:25,377] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.83 GB, percent = 73.3%
+EMPTY.
+[2025-06-12 06:53:25,560] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:25,560] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:25,560] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.73 GB, percent = 73.1%
+[2025-06-12 06:53:25,818] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:25,819] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:25,819] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.73 GB, percent = 73.1%
+[2025-06-12 06:53:25,904] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:25,904] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:25,905] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.73 GB, percent = 73.1%
+[2025-06-12 06:53:26,779] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:26,780] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:26,780] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.7 GB, percent = 73.1%
+[2025-06-12 06:53:26,864] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:26,864] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:26,864] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.7 GB, percent = 73.1%
+[2025-06-12 06:53:28,087] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.01
+[2025-06-12 06:53:28,087] [INFO] [logging.py:107:log_dist] [Rank 0] step=17, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:28,087] [INFO] [timer.py:264:stop] epoch=0/micro_step=17/global_step=17, RunningAvgSamplesPerSec=0.8531734327461251, CurrSamplesPerSec=0.7916359031433611, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:28,087] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.31 | bwd_microstep: 960.09 | bwd_inner_microstep: 660.49 | bwd_allreduce_microstep: 123.48 | step_microstep: 1223.21
+[2025-06-12 06:53:28,087] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.31 | bwd: 960.10 | bwd_inner: 660.49 | bwd_allreduce: 123.48 | step: 1223.22
+[2025-06-12 06:53:28,183] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:28,183] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:28,183] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 46.03 GB, percent = 73.6%
+EMPTY.
+[2025-06-12 06:53:28,376] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:28,376] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:28,376] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.94 GB, percent = 73.5%
+[2025-06-12 06:53:28,634] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:28,634] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:28,634] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.94 GB, percent = 73.5%
+[2025-06-12 06:53:28,719] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:28,720] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:28,720] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.94 GB, percent = 73.5%
+[2025-06-12 06:53:29,592] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:29,592] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:29,592] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.9 GB, percent = 73.4%
+[2025-06-12 06:53:29,676] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:29,676] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:29,676] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.9 GB, percent = 73.4%
+[2025-06-12 06:53:30,930] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 830.34
+[2025-06-12 06:53:30,931] [INFO] [logging.py:107:log_dist] [Rank 0] step=18, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:30,931] [INFO] [timer.py:264:stop] epoch=0/micro_step=18/global_step=18, RunningAvgSamplesPerSec=0.8484154747887829, CurrSamplesPerSec=0.7829223893301652, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:30,931] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.74 | bwd_microstep: 956.75 | bwd_inner_microstep: 660.83 | bwd_allreduce_microstep: 123.45 | step_microstep: 1254.97
+[2025-06-12 06:53:30,932] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.74 | bwd: 956.75 | bwd_inner: 660.83 | bwd_allreduce: 123.45 | step: 1254.98
+[2025-06-12 06:53:31,066] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:31,067] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:31,067] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 46.01 GB, percent = 73.6%
+EMPTY.
+[2025-06-12 06:53:31,298] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:31,298] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:31,298] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.81 GB, percent = 73.2%
+[2025-06-12 06:53:31,614] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:31,614] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:31,614] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.81 GB, percent = 73.2%
+[2025-06-12 06:53:31,742] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:31,743] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:31,743] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.81 GB, percent = 73.2%
+[2025-06-12 06:53:32,678] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:32,678] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:32,679] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.76 GB, percent = 73.2%
+[2025-06-12 06:53:32,806] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:32,807] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:32,807] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.76 GB, percent = 73.2%
+[2025-06-12 06:53:34,038] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.46
+[2025-06-12 06:53:34,038] [INFO] [logging.py:107:log_dist] [Rank 0] step=19, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:34,038] [INFO] [timer.py:264:stop] epoch=0/micro_step=19/global_step=19, RunningAvgSamplesPerSec=0.840394698290316, CurrSamplesPerSec=0.7299771083447122, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:34,039] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 198.86 | bwd_microstep: 1062.85 | bwd_inner_microstep: 679.95 | bwd_allreduce_microstep: 124.91 | step_microstep: 1231.65
+[2025-06-12 06:53:34,039] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 198.84 | bwd: 1062.86 | bwd_inner: 679.95 | bwd_allreduce: 124.91 | step: 1231.66
+[2025-06-12 06:53:34,132] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:34,132] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:34,132] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.7 GB, percent = 73.1%
+EMPTY.
+[2025-06-12 06:53:34,316] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:34,316] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:34,316] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.6 GB, percent = 72.9%
+[2025-06-12 06:53:34,576] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:34,576] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:34,576] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.58 GB, percent = 72.9%
+[2025-06-12 06:53:34,660] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:34,660] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:34,660] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.58 GB, percent = 72.9%
+[2025-06-12 06:53:35,533] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:35,533] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:35,533] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.54 GB, percent = 72.8%
+[2025-06-12 06:53:35,616] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:35,616] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:35,616] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.54 GB, percent = 72.8%
+[2025-06-12 06:53:36,862] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.22
+[2025-06-12 06:53:36,862] [INFO] [logging.py:107:log_dist] [Rank 0] step=20, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:36,862] [INFO] [timer.py:264:stop] epoch=0/micro_step=20/global_step=20, RunningAvgSamplesPerSec=0.8371495871796771, CurrSamplesPerSec=0.7855805881780327, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:36,862] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.73 | bwd_microstep: 956.10 | bwd_inner_microstep: 660.62 | bwd_allreduce_microstep: 123.67 | step_microstep: 1246.13
+[2025-06-12 06:53:36,863] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.73 | bwd: 956.10 | bwd_inner: 660.63 | bwd_allreduce: 123.67 | step: 1246.14
+[2025-06-12 06:53:36,963] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:36,964] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:36,964] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.97 GB, percent = 73.5%
+EMPTY.
+[2025-06-12 06:53:37,147] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:37,147] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:37,147] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.86 GB, percent = 73.3%
+[2025-06-12 06:53:37,407] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:37,407] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:37,407] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.84 GB, percent = 73.3%
+[2025-06-12 06:53:37,490] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:37,491] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:37,491] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.84 GB, percent = 73.3%
+[2025-06-12 06:53:38,372] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:38,372] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:38,372] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.8 GB, percent = 73.2%
+[2025-06-12 06:53:38,464] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:38,465] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:38,465] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.8 GB, percent = 73.2%
+[2025-06-12 06:53:39,705] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 812.48
+[2025-06-12 06:53:39,705] [INFO] [logging.py:107:log_dist] [Rank 0] step=21, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:39,706] [INFO] [timer.py:264:stop] epoch=0/micro_step=21/global_step=21, RunningAvgSamplesPerSec=0.8340454124728119, CurrSamplesPerSec=0.7818602048088034, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:39,706] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.84 | bwd_microstep: 963.70 | bwd_inner_microstep: 660.03 | bwd_allreduce_microstep: 123.50 | step_microstep: 1240.91
+[2025-06-12 06:53:39,706] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.81 | bwd: 963.70 | bwd_inner: 660.07 | bwd_allreduce: 123.51 | step: 1240.91
+[2025-06-12 06:53:39,795] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:39,795] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.11 GB         Max_CA 9 GB 
+[2025-06-12 06:53:39,795] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.61 GB, percent = 72.9%
+EMPTY.
+[2025-06-12 06:53:39,980] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:39,981] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:39,981] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.6 GB, percent = 72.9%
+[2025-06-12 06:53:40,252] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:40,252] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:40,252] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.61 GB, percent = 72.9%
+[2025-06-12 06:53:40,345] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:40,346] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:40,346] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.58 GB, percent = 72.9%
+[2025-06-12 06:53:41,217] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:41,217] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:41,217] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.58 GB, percent = 72.9%
+[2025-06-12 06:53:41,299] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:41,300] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:41,300] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.56 GB, percent = 72.9%
+[2025-06-12 06:53:42,530] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.45
+[2025-06-12 06:53:42,531] [INFO] [logging.py:107:log_dist] [Rank 0] step=22, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:42,531] [INFO] [timer.py:264:stop] epoch=0/micro_step=22/global_step=22, RunningAvgSamplesPerSec=0.8314070899424254, CurrSamplesPerSec=0.7842702428231715, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:42,531] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 185.01 | bwd_microstep: 964.23 | bwd_inner_microstep: 659.91 | bwd_allreduce_microstep: 123.57 | step_microstep: 1231.16
+[2025-06-12 06:53:42,531] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.95 | bwd: 964.23 | bwd_inner: 659.91 | bwd_allreduce: 123.57 | step: 1231.17
+[2025-06-12 06:53:42,621] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:42,622] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:42,622] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.38 GB, percent = 72.6%
+EMPTY.
+[2025-06-12 06:53:42,807] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:42,808] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:42,808] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.37 GB, percent = 72.5%
+[2025-06-12 06:53:43,067] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:43,067] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:43,067] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.38 GB, percent = 72.6%
+[2025-06-12 06:53:43,150] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:43,151] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:43,151] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.38 GB, percent = 72.6%
+[2025-06-12 06:53:44,020] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:44,021] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:44,021] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.36 GB, percent = 72.5%
+[2025-06-12 06:53:44,104] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:44,104] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:44,104] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.36 GB, percent = 72.5%
+[2025-06-12 06:53:45,331] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 813.05
+[2025-06-12 06:53:45,331] [INFO] [logging.py:107:log_dist] [Rank 0] step=23, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:45,331] [INFO] [timer.py:264:stop] epoch=0/micro_step=23/global_step=23, RunningAvgSamplesPerSec=0.8294742208743199, CurrSamplesPerSec=0.7926199696648077, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:45,332] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.63 | bwd_microstep: 952.72 | bwd_inner_microstep: 660.49 | bwd_allreduce_microstep: 123.52 | step_microstep: 1227.34
+[2025-06-12 06:53:45,332] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.62 | bwd: 952.72 | bwd_inner: 660.49 | bwd_allreduce: 123.52 | step: 1227.34
+[2025-06-12 06:53:45,422] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:45,423] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:45,423] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.28 GB, percent = 72.4%
+EMPTY.
+[2025-06-12 06:53:45,608] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:45,608] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:45,608] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.15 GB, percent = 72.2%
+[2025-06-12 06:53:45,865] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:45,866] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:45,866] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.14 GB, percent = 72.2%
+[2025-06-12 06:53:45,949] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:45,949] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:45,949] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.14 GB, percent = 72.2%
+[2025-06-12 06:53:46,818] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:46,818] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:46,818] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.13 GB, percent = 72.2%
+[2025-06-12 06:53:46,900] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:46,901] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:46,901] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.13 GB, percent = 72.2%
+[2025-06-12 06:53:48,128] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 811.06
+[2025-06-12 06:53:48,128] [INFO] [logging.py:107:log_dist] [Rank 0] step=24, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:48,128] [INFO] [timer.py:264:stop] epoch=0/micro_step=24/global_step=24, RunningAvgSamplesPerSec=0.8277777885427381, CurrSamplesPerSec=0.7936893069453277, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:48,128] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 185.36 | bwd_microstep: 951.93 | bwd_inner_microstep: 660.27 | bwd_allreduce_microstep: 123.47 | step_microstep: 1227.57
+[2025-06-12 06:53:48,129] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 185.35 | bwd: 951.93 | bwd_inner: 660.27 | bwd_allreduce: 123.47 | step: 1227.57
+[2025-06-12 06:53:48,229] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:48,230] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:48,230] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.41 GB, percent = 72.6%
+EMPTY.
+[2025-06-12 06:53:48,426] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:48,426] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:48,426] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.27 GB, percent = 72.4%
+[2025-06-12 06:53:48,685] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:48,685] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:48,685] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.27 GB, percent = 72.4%
+[2025-06-12 06:53:48,769] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:48,770] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:48,770] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.27 GB, percent = 72.4%
+[2025-06-12 06:53:49,643] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:49,643] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:49,643] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.25 GB, percent = 72.3%
+[2025-06-12 06:53:49,727] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:49,727] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:49,727] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.25 GB, percent = 72.3%
+[2025-06-12 06:53:50,952] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 810.96
+[2025-06-12 06:53:50,953] [INFO] [logging.py:107:log_dist] [Rank 0] step=25, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:50,953] [INFO] [timer.py:264:stop] epoch=0/micro_step=25/global_step=25, RunningAvgSamplesPerSec=0.8261322358222748, CurrSamplesPerSec=0.7915156432094468, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:50,953] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 185.13 | bwd_microstep: 956.73 | bwd_inner_microstep: 660.81 | bwd_allreduce_microstep: 123.48 | step_microstep: 1225.80
+[2025-06-12 06:53:50,953] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 185.11 | bwd: 956.73 | bwd_inner: 660.81 | bwd_allreduce: 123.48 | step: 1225.81
+[2025-06-12 06:53:51,046] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:51,046] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:51,046] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.17 GB, percent = 72.2%
+EMPTY.
+[2025-06-12 06:53:51,236] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:51,236] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:51,236] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.17 GB, percent = 72.2%
+[2025-06-12 06:53:51,493] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:51,493] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:51,493] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.16 GB, percent = 72.2%
+[2025-06-12 06:53:51,576] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:51,577] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:51,577] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.16 GB, percent = 72.2%
+[2025-06-12 06:53:52,446] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:52,446] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:52,446] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.16 GB, percent = 72.2%
+[2025-06-12 06:53:52,528] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:52,529] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:52,529] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.16 GB, percent = 72.2%
+[2025-06-12 06:53:53,757] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 810.72
+[2025-06-12 06:53:53,757] [INFO] [logging.py:107:log_dist] [Rank 0] step=26, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:53,758] [INFO] [timer.py:264:stop] epoch=0/micro_step=26/global_step=26, RunningAvgSamplesPerSec=0.8247084659680316, CurrSamplesPerSec=0.7932642715628347, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:53,758] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.64 | bwd_microstep: 952.65 | bwd_inner_microstep: 660.96 | bwd_allreduce_microstep: 123.49 | step_microstep: 1228.97
+[2025-06-12 06:53:53,758] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.63 | bwd: 952.65 | bwd_inner: 660.96 | bwd_allreduce: 123.49 | step: 1228.98
+[2025-06-12 06:53:53,850] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:53,850] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:53,850] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 46.02 GB, percent = 73.6%
+EMPTY.
+[2025-06-12 06:53:54,036] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:54,036] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:54,036] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.82 GB, percent = 73.3%
+[2025-06-12 06:53:54,296] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:54,296] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:54,297] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.81 GB, percent = 73.3%
+[2025-06-12 06:53:54,382] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:54,383] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:54,383] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.79 GB, percent = 73.2%
+[2025-06-12 06:53:55,256] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:55,256] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:55,256] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.77 GB, percent = 73.2%
+[2025-06-12 06:53:55,341] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:55,341] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:55,341] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.76 GB, percent = 73.2%
+[2025-06-12 06:53:56,613] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 831.90
+[2025-06-12 06:53:56,614] [INFO] [logging.py:107:log_dist] [Rank 0] step=27, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:56,614] [INFO] [timer.py:264:stop] epoch=0/micro_step=27/global_step=27, RunningAvgSamplesPerSec=0.8226424114396075, CurrSamplesPerSec=0.7759861932219889, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:56,614] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 185.59 | bwd_microstep: 958.82 | bwd_inner_microstep: 660.27 | bwd_allreduce_microstep: 123.58 | step_microstep: 1272.88
+[2025-06-12 06:53:56,614] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 185.58 | bwd: 958.82 | bwd_inner: 660.27 | bwd_allreduce: 123.59 | step: 1272.89
+[2025-06-12 06:53:56,744] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:56,745] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:56,745] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.27 GB, percent = 72.4%
+EMPTY.
+[2025-06-12 06:53:56,980] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:53:56,980] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:53:56,981] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.2 GB, percent = 72.3%
+[2025-06-12 06:53:57,298] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:53:57,299] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:57,299] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.2 GB, percent = 72.3%
+[2025-06-12 06:53:57,426] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:53:57,427] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:53:57,427] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.21 GB, percent = 72.3%
+[2025-06-12 06:53:58,356] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:53:58,357] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:58,357] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.24 GB, percent = 72.3%
+[2025-06-12 06:53:58,483] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:53:58,484] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:58,484] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.29 GB, percent = 72.4%
+[2025-06-12 06:53:59,725] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 812.33
+[2025-06-12 06:53:59,725] [INFO] [logging.py:107:log_dist] [Rank 0] step=28, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:53:59,725] [INFO] [timer.py:264:stop] epoch=0/micro_step=28/global_step=28, RunningAvgSamplesPerSec=0.8185863277459667, CurrSamplesPerSec=0.7287566589049744, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:53:59,725] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 199.82 | bwd_microstep: 1056.84 | bwd_inner_microstep: 678.11 | bwd_allreduce_microstep: 123.83 | step_microstep: 1241.38
+[2025-06-12 06:53:59,726] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 199.81 | bwd: 1056.84 | bwd_inner: 678.13 | bwd_allreduce: 123.83 | step: 1241.38
+[2025-06-12 06:53:59,820] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:53:59,820] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:53:59,820] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.76 GB, percent = 73.2%
+EMPTY.
+[2025-06-12 06:54:00,010] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:54:00,010] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:54:00,010] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.75 GB, percent = 73.2%
+[2025-06-12 06:54:00,268] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:54:00,269] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:00,269] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+[2025-06-12 06:54:00,352] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:54:00,352] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:00,353] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.72 GB, percent = 73.1%
+[2025-06-12 06:54:01,225] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:54:01,226] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:01,226] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.72 GB, percent = 73.1%
+[2025-06-12 06:54:01,308] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:54:01,308] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:01,308] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.7 GB, percent = 73.1%
+[2025-06-12 06:54:02,531] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 810.95
+[2025-06-12 06:54:02,531] [INFO] [logging.py:107:log_dist] [Rank 0] step=29, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:54:02,532] [INFO] [timer.py:264:stop] epoch=0/micro_step=29/global_step=29, RunningAvgSamplesPerSec=0.8176201342144024, CurrSamplesPerSec=0.7932755239147856, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:54:02,532] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 185.55 | bwd_microstep: 956.15 | bwd_inner_microstep: 659.69 | bwd_allreduce_microstep: 123.54 | step_microstep: 1223.49
+[2025-06-12 06:54:02,532] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 185.55 | bwd: 956.15 | bwd_inner: 659.69 | bwd_allreduce: 123.55 | step: 1223.50
+[2025-06-12 06:54:02,628] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:54:02,628] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:02,628] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+EMPTY.
+[2025-06-12 06:54:02,812] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:54:02,813] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:54:02,813] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+[2025-06-12 06:54:03,076] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:54:03,076] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:03,076] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+[2025-06-12 06:54:03,165] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:54:03,166] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:03,166] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.74 GB, percent = 73.1%
+[2025-06-12 06:54:04,040] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:54:04,040] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:04,040] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.72 GB, percent = 73.1%
+[2025-06-12 06:54:04,128] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:54:04,128] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:04,128] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.72 GB, percent = 73.1%
+[2025-06-12 06:54:05,377] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 810.17
+[2025-06-12 06:54:05,378] [INFO] [logging.py:107:log_dist] [Rank 0] step=30, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:54:05,378] [INFO] [timer.py:264:stop] epoch=0/micro_step=30/global_step=30, RunningAvgSamplesPerSec=0.8162064535183572, CurrSamplesPerSec=0.7798022290875187, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:54:05,378] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 184.29 | bwd_microstep: 963.06 | bwd_inner_microstep: 659.45 | bwd_allreduce_microstep: 123.47 | step_microstep: 1249.80
+[2025-06-12 06:54:05,378] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 184.28 | bwd: 963.06 | bwd_inner: 659.45 | bwd_allreduce: 123.47 | step: 1249.81
+[2025-06-12 06:54:05,470] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:54:05,470] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:05,470] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.84 GB, percent = 73.3%
+EMPTY.
+[2025-06-12 06:54:05,658] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:54:05,658] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:54:05,658] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.79 GB, percent = 73.2%
+[2025-06-12 06:54:05,918] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:54:05,918] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:05,919] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.79 GB, percent = 73.2%
+[2025-06-12 06:54:06,003] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:54:06,004] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:06,004] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.79 GB, percent = 73.2%
+[2025-06-12 06:54:06,876] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:54:06,877] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:06,877] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.75 GB, percent = 73.2%
+[2025-06-12 06:54:06,960] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:54:06,960] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:06,961] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.75 GB, percent = 73.2%
+[2025-06-12 06:54:08,187] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 810.02
+[2025-06-12 06:54:08,187] [INFO] [logging.py:107:log_dist] [Rank 0] step=31, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:54:08,187] [INFO] [timer.py:264:stop] epoch=0/micro_step=31/global_step=31, RunningAvgSamplesPerSec=0.8153032616848355, CurrSamplesPerSec=0.7908007395679939, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:54:08,188] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 185.04 | bwd_microstep: 957.21 | bwd_inner_microstep: 660.72 | bwd_allreduce_microstep: 123.69 | step_microstep: 1226.85
+[2025-06-12 06:54:08,188] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 185.03 | bwd: 957.21 | bwd_inner: 660.72 | bwd_allreduce: 123.69 | step: 1226.85
+[2025-06-12 06:54:08,290] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:54:08,290] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:08,290] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.78 GB, percent = 73.2%
+EMPTY.
+[2025-06-12 06:54:08,493] [INFO] [utils.py:781:see_memory_usage] Engine before forward
+[2025-06-12 06:54:08,493] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.39 GB         CA 0.82 GB         Max_CA 9 GB 
+[2025-06-12 06:54:08,493] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.76 GB, percent = 73.2%
+[2025-06-12 06:54:08,753] [INFO] [utils.py:781:see_memory_usage] Engine after forward
+[2025-06-12 06:54:08,753] [INFO] [utils.py:782:see_memory_usage] MA 5.28 GB         Max_MA 5.77 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:08,753] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.76 GB, percent = 73.2%
+[2025-06-12 06:54:08,838] [INFO] [utils.py:781:see_memory_usage] Engine before backward
+[2025-06-12 06:54:08,838] [INFO] [utils.py:782:see_memory_usage] MA 5.01 GB         Max_MA 5.28 GB         CA 5.83 GB         Max_CA 6 GB 
+[2025-06-12 06:54:08,838] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.76 GB, percent = 73.2%
+[2025-06-12 06:54:09,711] [INFO] [utils.py:781:see_memory_usage] Engine after backward
+[2025-06-12 06:54:09,711] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 5.99 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:09,711] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.73 GB, percent = 73.1%
+[2025-06-12 06:54:09,795] [INFO] [utils.py:781:see_memory_usage] Engine before step
+[2025-06-12 06:54:09,795] [INFO] [utils.py:782:see_memory_usage] MA 0.88 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:09,795] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.73 GB, percent = 73.1%
+[2025-06-12 06:54:11,032] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | optimizer_step: 812.20
+[2025-06-12 06:54:11,032] [INFO] [logging.py:107:log_dist] [Rank 0] step=32, skipped=7, lr=[0.001], mom=[[0.8, 0.999]]
+[2025-06-12 06:54:11,032] [INFO] [timer.py:264:stop] epoch=0/micro_step=32/global_step=32, RunningAvgSamplesPerSec=0.8143544900502471, CurrSamplesPerSec=0.7877690019708135, MemAllocated=0.39GB, MaxMemAllocated=0.88GB
+[2025-06-12 06:54:11,033] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd_microstep: 185.22 | bwd_microstep: 956.91 | bwd_inner_microstep: 659.69 | bwd_allreduce_microstep: 123.47 | step_microstep: 1237.29
+[2025-06-12 06:54:11,033] [INFO] [logging.py:107:log_dist] [Rank 0] time (ms) | fwd: 185.21 | bwd: 956.91 | bwd_inner: 659.69 | bwd_allreduce: 123.47 | step: 1237.30
+[2025-06-12 06:54:11,128] [INFO] [utils.py:781:see_memory_usage] Engine after step
+[2025-06-12 06:54:11,128] [INFO] [utils.py:782:see_memory_usage] MA 0.39 GB         Max_MA 0.88 GB         CA 9.12 GB         Max_CA 9 GB 
+[2025-06-12 06:54:11,128] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 45.85 GB, percent = 73.3%
+EMPTY.
+[2025-06-12 06:54:13,958] [INFO] [launch.py:351:main] Process 1373 exits successfully.

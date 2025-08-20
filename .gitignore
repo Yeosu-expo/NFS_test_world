@@ -1,0 +1,11 @@
+
+## -- Temporary Files -- ##
+# log files & profiled files
+.log
+output/
+
+# a test code.
+dum_code.py
+
+# docker swarm ips for connecting their ssh
+hostfile.txt
