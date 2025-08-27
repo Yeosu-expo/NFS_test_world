@@ -10,3 +10,6 @@ dum_code.py
 
 # docker swarm ips for connecting their ssh
 hostfile.txt
+
+## -- Checkpoints -- ##
+/hetero-code/checkpoint

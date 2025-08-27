@@ -1,12 +1,12 @@
 {
     "fp16": {
         "enabled": true,
-        "auto_cast": false,
-        "loss_scale": 65536
+        "auto_cast": true,
+        "loss_scale": 0
     },
 
     "zero_optimization": {
-        "stage": 3,
+        "stage": 2,
         "offload_optimizer": {
             "device": "cpu",
             "ratio": 1,
@@ -15,20 +15,23 @@
     },
 
     "optimizer": {
-        "type": "Adam",
+        "type": "AdamW",
+        "params": { "lr": 0.0005, "betas": [0.9, 0.95], "eps": 1e-8, "weight_decay": 0.01 }
+    },
+    "scheduler": {
+        "type": "WarmupDecayLR",
         "params": {
-        "lr": 0.001,
-        "betas": [
-            0.8,
-            0.999
-        ],
-        "eps": 1e-8,
-        "weight_decay": 3e-7
+            "warmup_min_lr": 0.0,
+            "warmup_max_lr": 0.0005,
+            "warmup_num_steps": 200,
+            "total_num_steps": 1000
         }
     },
+    "gradient_clipping": 1.0,
+
     
-    "train_batch_size" : 8,
-    "micro_batch_size_per_gpu": 8,
+    "train_batch_size" :16,
+    "micro_batch_size_per_gpu": 16,
     "gradient_accumulation_steps": 1,
 
     "steps_per_print": 1,
