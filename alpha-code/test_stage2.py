@@ -78,7 +78,73 @@ else:
 
 # torch.distributed의 디버그 로그도 활성화
 os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
+
 logger.info("Logger initialized.")
+
+# -------------------- Gradient correlation helpers --------------------
+import math
+
+def _flatten_grads(engine: deepspeed.DeepSpeedEngine) -> torch.Tensor:
+    """Concatenate all parameter grads into a 1-D float tensor on the same device.
+    Works with DP/ZeRO; parameters with None grads are skipped.
+    """
+    grads = []
+    for p in engine.module.parameters():
+        if p.grad is None:
+            continue
+        g = p.grad.detach()
+        if not g.is_floating_point():
+            g = g.float()
+        grads.append(g.reshape(-1))
+    if len(grads) == 0:
+        return torch.empty(0, device=engine.device, dtype=torch.float32)
+    return torch.cat(grads, dim=0)
+
+
+def _pearson_1d(a: torch.Tensor, b: torch.Tensor) -> float:
+    """Pearson correlation between two 1-D tensors (same length). Returns Python float."""
+    a = a.float(); b = b.float()
+    a = a - a.mean()
+    b = b - b.mean()
+    denom = (a.norm() * b.norm()).clamp_min(1e-12)
+    return float(torch.dot(a, b) / denom)
+
+
+def measure_grad_corr(engine: deepspeed.DeepSpeedEngine, sample_size: int = 65536, base_seed: int = 1337):
+    """
+    Estimate Pearson correlation between **rank 0** and other ranks' gradients each step.
+    To avoid huge all_gathers, we sample `sample_size` coordinates (same indices on all ranks)
+    from the flattened gradient vector and compute correlation on those samples.
+    Logs results on rank 0 with tag [GradCorr].
+    """
+    if not dist.is_initialized() or dist.get_world_size() < 2:
+        return
+
+    gflat = _flatten_grads(engine)
+    N = int(gflat.numel())
+    if N == 0:
+        return
+
+    k = min(sample_size, N)
+    gen = torch.Generator(device=gflat.device)
+    # use global_steps to vary the sample each step, but make it identical across ranks
+    current_step = int(getattr(engine, 'global_steps', 0))
+    gen.manual_seed(base_seed + current_step)
+    idx = torch.randint(high=N, size=(k,), generator=gen, device=gflat.device)
+    sample = gflat.index_select(0, idx)
+
+    # gather samples from all ranks (same shape)
+    ws = dist.get_world_size()
+    gathered = [torch.empty_like(sample) for _ in range(ws)]
+    dist.all_gather(gathered, sample)
+
+    # rank 0 computes pairwise correlations to every other rank
+    if dist.get_rank() == 0:
+        ref = gathered[0]
+        for r in range(1, ws):
+            corr = _pearson_1d(ref, gathered[r])
+            logger.info(f"[GradCorr] step={current_step} k={k} corr(rank0, rank{r})={corr:.6f}")
+# ----------------------------------------------------------------------
 
 def main():
     # 초기화
@@ -167,6 +233,7 @@ def main():
             
             outputs = model_engine(input_ids=input_ids, labels=labels)
             model_engine.backward(outputs.loss)
+            measure_grad_corr(model_engine, sample_size=65536, base_seed=1337)
             model_engine.step()
 
             msg = f"Epoch {epoch+1}, i: {i}, micro step {model_engine.micro_steps}, global step {model_engine.global_steps}, Loss: {outputs.loss.item()}"
