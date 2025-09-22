@@ -134,7 +134,7 @@ def main():
     logger.info("Loading dataloader ...")
     # DataLoader 생성 (배치 크기는 필요에 따라 조정)
     num_epochs = 1
-    batch_size = model_engine.train_micro_batch_size_per_gpu() * model_engine.gradient_accumulation_steps()
+    batch_size = model_engine.train_micro_batch_size_per_gpu()
     logger.info(f"Batchs Size: {batch_size}")
 
     train_dataloader = DataLoader(
